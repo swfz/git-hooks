@@ -1,41 +1,16 @@
 #!/bin/bash
 
 source $(dirname "${0}")/_local-hook-exec
-declare scriptDir=$(cd $(dirname $0) || exit;pwd)
-declare parentDir="$(dirname "${scriptDir}")"
-declare HAS_NOT_NODE=$(type node >/dev/null 2>&1)
-declare SECRETLINT_RV=0
-declare ACTIONLINT_RV=0
 
-if ! $HAS_NOT_NODE ;then
+# for lint-staged
+export FORCE_COLOR=1
+
+# for global-hook ignore option
+if [[ -n $NO_VERIFY_GLOBAL ]]; then
   exit 0
 fi
 
-declare FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g' | sed 's|\[|\\\\[|g' | sed 's|\]|\\\\]|g')
-declare ACTIONS_FILES=$(git diff --cached --name-only --diff-filter=ACMR .github/workflows/*.yml | sed 's| |\\ |g' | sed 's|\[|\\\\[|g' | sed 's|\]|\\\\]|g')
+declare scriptDir=$(cd $(dirname $0) || exit;pwd)
+declare parentDir="$(dirname "${scriptDir}")"
 
-[ -z "$FILES" ] && [ -z "$ACTIONS_FILES" ] && exit 0
-
-if [[ ! -z "$FILES" ]]; then
-  echo "  ▶ Check credentials by secretlint"
-  if [ -f "$PWD/.secretlintignore" ]; then
-    echo "$FILES" | xargs "${parentDir}/node_modules/.bin/secretlint" --secretlintignore "$PWD/.secretlintignore" --secretlintrc "${parentDir}/.secretlintrc.json"
-  else
-    echo "$FILES" | xargs "${parentDir}/node_modules/.bin/secretlint" --secretlintrc "${parentDir}/.secretlintrc.json"
-  fi
-
-  SECRETLINT_RV=$?
-fi
-
-if [[ ! -z "$ACTIONS_FILES" ]]; then
-  echo "  ▶ Check syntax by actionlint"
-  echo "$ACTIONS_FILES" | xargs actionlint
-
-  ACTIONLINT_RV=$?
-fi
-
-if [ $SECRETLINT_RV -eq 0 ] && [ $ACTIONLINT_RV -eq 0 ] ;then
-    exit 0
-else
-    exit 1
-fi
+"${parentDir}/node_modules/.bin/lint-staged" --config ${parentDir}/lint-staged.config.js
