@@ -119,7 +119,7 @@
   resolved "https://registry.yarnpkg.com/@secretlint/profiler/-/profiler-5.2.0.tgz#968c34c5a55883e80933cb044567f29faa804d91"
   integrity sha512-smngS58BcQMP+E0FGZkMxpqPRJajhBnBvYLisUrEM719pbNU15GaUYk3MQtrQtDG4bCxN7RR5hZKCCbhIJEH4g==
 
-"@secretlint/secretlint-formatter-sarif@^5.2.0":
+"@secretlint/secretlint-formatter-sarif@5.2.0":
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/@secretlint/secretlint-formatter-sarif/-/secretlint-formatter-sarif-5.2.0.tgz#cd280ae463b10b5bbf11bea7d4895d045add2104"
   integrity sha512-lrEkVqo5KYeEtVvWCT7Etm0fHnTheUacX1NvPKhs8QVfcMT3aGQ14lkYmYl1PFBi66sVnWwdni3EpuAbtJa4NA==
@@ -947,7 +947,7 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-lint-staged@^13.0.1:
+lint-staged@13.0.1:
   version "13.0.1"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-13.0.1.tgz#899e78065ab29b88fdd922482411121664ef66be"
   integrity sha512-Ykaf4QTi0a02BF7cnq7JIPGOJxH4TkNMWhSlJdH9wOekd0X+gog47Jfh/0L31DqZe5AiydLGC7LkPqpaNm+Kvg==

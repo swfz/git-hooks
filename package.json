@@ -25,11 +25,11 @@
     "prepare": "node scripts/bootstrap.js"
   },
   "dependencies": {
-    "@secretlint/secretlint-formatter-sarif": "^5.2.0",
+    "@secretlint/secretlint-formatter-sarif": "5.2.0",
     "@secretlint/secretlint-rule-no-dotenv": "5.2.0",
     "@secretlint/secretlint-rule-no-homedir": "5.2.0",
     "@secretlint/secretlint-rule-preset-recommend": "5.2.0",
-    "lint-staged": "^13.0.1",
+    "lint-staged": "13.0.1",
     "secretlint": "5.2.0"
   }
 }
