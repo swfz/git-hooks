@@ -13,4 +13,4 @@ fi
 declare scriptDir=$(cd $(dirname $0) || exit;pwd)
 declare parentDir="$(dirname "${scriptDir}")"
 
-"${parentDir}/node_modules/.bin/lint-staged" --config ${parentDir}/lint-staged.config.js
+"${parentDir}/node_modules/.bin/lint-staged" --config ${parentDir}/lint-staged.config.js --shell
