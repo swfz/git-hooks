@@ -1,5 +1,9 @@
-const fs = require("fs");
-const path = require("path");
+import * as fs from 'fs';
+import { dirname } from 'path';
+import * as path from 'path';
+import { fileURLToPath } from 'url';
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 const IGNORE_GLOBAL_HOOKS_PATH = path.join(__dirname, "../IGNORE_GLOBAL_HOOKS");
 console.log("  ▶ Run Bootstrap");
 if (!fs.existsSync(IGNORE_GLOBAL_HOOKS_PATH)) {
