@@ -167,12 +167,12 @@
     "@secretlint/types" "^5.2.0"
     "@textlint/regexp-string-matcher" "^1.1.0"
 
-"@secretlint/secretlint-rule-no-dotenv@5.2.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-5.2.0.tgz#7a1f45a7690f992db659938b61978def2b024697"
-  integrity sha512-vjP24AIHzk17aNXcHv7GIyce4PKeMG7tHOffomSvrGrkKXWPt3niZ42N80R4RY/uCfvHL+Km5VlZjhOZ2zPvJw==
+"@secretlint/secretlint-rule-no-dotenv@5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-5.2.1.tgz#c527498c89bbdae25896c283500f116e0e2b250e"
+  integrity sha512-QK2GIf0VFBk/plZB6yxb21Xyhuzwm9c/T/dBtvueFFn2hv4FPzmPy7Cnj2B5Pb2+y56XvY/CgqXqeggN/jvrTA==
   dependencies:
-    "@secretlint/types" "^5.2.0"
+    "@secretlint/types" "^5.2.1"
 
 "@secretlint/secretlint-rule-no-homedir@5.2.0":
   version "5.2.0"
