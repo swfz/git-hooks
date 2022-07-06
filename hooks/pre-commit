@@ -1,12 +1,13 @@
-#!/bin/bash
-
-echo '[START] local hook'
-source $(dirname "${0}")/_local-hook-exec
-
-echo '[START] global hook'
+#!/bin/bash -e
 
 # for lint-staged
 export FORCE_COLOR=1
+
+echo '[START] local hook'
+
+source $(dirname "${0}")/_local-hook-exec
+
+echo '[START] global hook'
 
 # for global-hook ignore option
 if [[ -n $NO_VERIFY_GLOBAL ]]; then
