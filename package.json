@@ -27,7 +27,7 @@
   "dependencies": {
     "@secretlint/secretlint-formatter-sarif": "5.2.1",
     "@secretlint/secretlint-rule-no-dotenv": "5.2.1",
-    "@secretlint/secretlint-rule-no-homedir": "5.2.1",
+    "@secretlint/secretlint-rule-no-homedir": "5.2.4",
     "@secretlint/secretlint-rule-preset-recommend": "5.2.3",
     "lint-staged": "13.0.3",
     "secretlint": "5.2.3"
