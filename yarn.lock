@@ -119,12 +119,12 @@
   resolved "https://registry.yarnpkg.com/@secretlint/profiler/-/profiler-5.2.4.tgz#ec7ba4ca665855b0390d690e37abfa42a6bd840e"
   integrity sha512-0cQzE87DQlM0+Fcu9cT+oSBKXSOgwdPZ6CbNW+eyWs2U1B4+8sQ672/orNTRJ2VSeXUwRq110n5KVHQe7k0WAQ==
 
-"@secretlint/secretlint-formatter-sarif@5.2.4":
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-formatter-sarif/-/secretlint-formatter-sarif-5.2.4.tgz#305e08b9a990d7823081eb30ec0f45edd4b0f4fd"
-  integrity sha512-i+W/f7bYcS5u0TuM0J651k7x+iJQS58eeM+qi2+uzToBJjQ68lhNwQitJVC9mZXO1OMKt/rHI2bGRFV6HR7Sag==
+"@secretlint/secretlint-formatter-sarif@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-formatter-sarif/-/secretlint-formatter-sarif-5.3.0.tgz#42b4335a2ee70b2506b52bca7f0e2b1cf5ffe8bd"
+  integrity sha512-1wrmPDg9Ea5AU8We0PLAooYJQbmc4g1QK1GUnoHOaW7DkmuME6YWhYfTbeMsJ4ecQcyzZ4t0uMxob/T7GqnQag==
   dependencies:
-    node-sarif-builder "^2.0.2"
+    node-sarif-builder "^2.0.3"
 
 "@secretlint/secretlint-rule-aws@^5.2.4":
   version "5.2.4"
@@ -1020,10 +1020,10 @@ node-forge@^1.3.1:
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-1.3.1.tgz#be8da2af243b2417d5f646a770663a92b7e9ded3"
   integrity sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA==
 
-node-sarif-builder@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/node-sarif-builder/-/node-sarif-builder-2.0.2.tgz#b69166a98808a6eccb7921f1c0b80438e5018a98"
-  integrity sha512-SkNE1BnGyO5FdHscmGQ0cQ/9S1nHt+vi+UHr5AGbzVaeeTzZBHnpDoi5XIB3Cj7KtzI3kxocKkI6HLdTBcRNLA==
+node-sarif-builder@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/node-sarif-builder/-/node-sarif-builder-2.0.3.tgz#179ae590ce020f97f9e45037dc1cde85aa4398ec"
+  integrity sha512-Pzr3rol8fvhG/oJjIq2NTVB0vmdNNlz22FENhhPojYRZ4/ee08CfK4YuKmuL54V9MLhI1kpzxfOJ/63LzmZzDg==
   dependencies:
     "@types/sarif" "^2.1.4"
     fs-extra "^10.0.0"
