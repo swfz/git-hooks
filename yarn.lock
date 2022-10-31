@@ -167,12 +167,12 @@
     "@secretlint/types" "^5.2.4"
     "@textlint/regexp-string-matcher" "^2.0.2"
 
-"@secretlint/secretlint-rule-no-dotenv@5.2.4":
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-5.2.4.tgz#46bbda31d6d0323823b3dd879f1d50f746b780ff"
-  integrity sha512-3/iyJ5WAS3fqjAjcgPQX071Oi0aSA/0PUkB9zGGDc7n4RFnlNZwZBv6460VUzmTQNrHFXgE4SXdkFjHqhmYyBQ==
+"@secretlint/secretlint-rule-no-dotenv@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-5.3.0.tgz#d7fde853468468e037c126149037e06df605a3ed"
+  integrity sha512-30wP3fIz/x5wlB+Ifsfy1jPpch6YY9a2KefuDCEESo1Lcn1U/TAkoRmiBp9rVkLrBcgFypvYyEkLeE3SrtTnsw==
   dependencies:
-    "@secretlint/types" "^5.2.4"
+    "@secretlint/types" "^5.3.0"
 
 "@secretlint/secretlint-rule-no-homedir@5.2.4":
   version "5.2.4"
@@ -236,15 +236,15 @@
     "@secretlint/types" "^5.2.4"
     istextorbinary "^6.0.0"
 
-"@secretlint/types@^5.2.1":
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-5.2.1.tgz#ed448c6e8afd4617120b65df6dd0de18c62936b2"
-  integrity sha512-2ysZZZcC4rX9KPyfU7dbxW7HQdqCTvLrQyDTFXm4Ma9bAsEXJQ/HBi6tfDKEFdLWJyeIHDBqw1w2flenmxYHTQ==
-
 "@secretlint/types@^5.2.4":
   version "5.2.4"
   resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-5.2.4.tgz#39703f4236abf0808e0522f6815a5a45b17ad553"
   integrity sha512-HevM03QnsnSkwYsAJRT81B+eKWGs0klss2SgwaSqYjL4cl7ORDPbfn8aAvl8GAFdFTi2NmWYW4pKI7cJHGGi7w==
+
+"@secretlint/types@^5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-5.3.0.tgz#51c1ede33a1fcc56f7bd13e22a31999c5041a4b5"
+  integrity sha512-IYugNzn0xUc95d1u+41AO9GBDVF/crGEC98oCZhqEFC56NzvZCA8m1ciYF+Mv2MmTExYphKBnuqgA9Z7L/WmgQ==
 
 "@textlint/ast-node-types@^12.2.1":
   version "12.2.1"
