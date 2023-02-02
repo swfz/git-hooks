@@ -174,12 +174,12 @@
   dependencies:
     "@secretlint/types" "^6.0.1"
 
-"@secretlint/secretlint-rule-no-homedir@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-homedir/-/secretlint-rule-no-homedir-5.3.0.tgz#322532ea6b483dce674da995c2b071a7e2a03ee8"
-  integrity sha512-0HRP8CFnGw4ra/Xa8YRuZfyDO0K4h6PCU3SaKLr+DiQY3vnBraSwd1LbBGFUs+hkx6YZ753bw3rUpNrFIh4BOA==
+"@secretlint/secretlint-rule-no-homedir@6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-homedir/-/secretlint-rule-no-homedir-6.1.0.tgz#4ec2618aa2ab4150d7721a2c23f8af27a3d7a352"
+  integrity sha512-80EuCsirzmkfUJwMU5Z0ouCUR9RK+pBeJx99ea/2MhraxuMP6+3Ki2zv86WZFPDF5wJ6CNqRJ9zKBR6hoxt/yA==
   dependencies:
-    "@secretlint/types" "^5.3.0"
+    "@secretlint/types" "^6.1.0"
     escape-string-regexp "^4.0.0"
 
 "@secretlint/secretlint-rule-npm@^6.0.2":
