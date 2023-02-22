@@ -5,15 +5,24 @@ export FORCE_COLOR=1
 
 echo '[START] local hook'
 
-source $(dirname "${0}")/_local-hook-exec
+rc=0
 
-echo '[START] global hook'
+source $(dirname "${0}")/_local-hook-exec || rc=$?
+
+echo $rc
+
+if [ ! ${rc} = 0 ]; then
+  echo '[FAILED] local hook'
+  exit ${rc}
+fi
 
 # for global-hook ignore option
 if [[ -n $NO_VERIFY_GLOBAL ]]; then
+  echo '[IGNORE] global hook(NO_VERIFY_GLOBAL)'
   exit 0
 fi
 
+echo '[START] global hook'
 declare scriptDir=$(cd $(dirname $0) || exit;pwd)
 declare parentDir="$(dirname "${scriptDir}")"
 

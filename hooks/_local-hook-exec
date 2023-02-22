@@ -2,16 +2,23 @@
 declare GIT_ROOT=$(git rev-parse --show-superproject-working-tree --show-toplevel | head -1)
 declare HOOK_NAME=$(basename "$0")
 declare LOCAL_HOOK="${GIT_ROOT}/.git/hooks/${HOOK_NAME}"
-declare LOCAL_HOOK_ALT="${GIT_ROOT}/$(git config --local core.hooksPath)/${HOOK_NAME}"
+
+# NOTE: pre-commitなどのツールによって対応を増やす必要がある
+husky_dir=$(find -name '.husky' | grep -v node_modules)
+declare LOCAL_HOOK_HUSKY="${GIT_ROOT}/${husky_dir}/${HOOK_NAME}"
+
 declare scriptDir=$(cd $(dirname $0);pwd)
 declare IGNORE_GLOBAL_HOOKS="$(dirname "${scriptDir}")/IGNORE_GLOBAL_HOOKS"
+
 # Prefer project's hook than global hooks
 if [ -e "$LOCAL_HOOK" ]; then
   $LOCAL_HOOK
+  export LOCAL_HOOK_FAILED=$?
   export LOCAL_HOOK_IS_CALLED=1
 fi
-if [ -e "$LOCAL_HOOK_ALT" ]; then
-  $LOCAL_HOOK_ALT
+if [ -e "$LOCAL_HOOK_HUSKY" ]; then
+  $LOCAL_HOOK_HUSKY
+  export LOCAL_HOOK_FAILED=$?
   export LOCAL_HOOK_IS_CALLED=1
 fi
 
@@ -21,4 +28,8 @@ fi
 # NO_VERIFY_GLOBAL_HOOKS=1 git commit -m "commit_message"
 if [ -n "${NO_VERIFY_GLOBAL_HOOKS}" ]; then
   exit 0
+fi
+
+if [ ! ${LOCAL_HOOK_FAILED} = 0 ]; then
+  exit ${LOCAL_HOOK_FAILED}
 fi
