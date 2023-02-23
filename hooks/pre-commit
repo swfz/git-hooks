@@ -9,8 +9,6 @@ rc=0
 
 source $(dirname "${0}")/_local-hook-exec || rc=$?
 
-echo $rc
-
 if [ ! ${rc} = 0 ]; then
   echo '[FAILED] local hook'
   exit ${rc}
