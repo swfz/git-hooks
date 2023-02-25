@@ -4,7 +4,7 @@ declare HOOK_NAME=$(basename "$0")
 declare LOCAL_HOOK="${GIT_ROOT}/.git/hooks/${HOOK_NAME}"
 
 # NOTE: pre-commitなどのツールによって対応を増やす必要がある
-husky_dir=$(find -name '.husky' | grep -v node_modules)
+husky_dir=$(find ./ -name '.husky' | grep -v node_modules) || true
 declare LOCAL_HOOK_HUSKY="${GIT_ROOT}/${husky_dir}/${HOOK_NAME}"
 
 declare scriptDir=$(cd $(dirname $0);pwd)
