@@ -25,7 +25,7 @@
     "prepare": "node scripts/bootstrap.js"
   },
   "dependencies": {
-    "@secretlint/secretlint-formatter-sarif": "7.0.7",
+    "@secretlint/secretlint-formatter-sarif": "8.0.0",
     "@secretlint/secretlint-rule-no-dotenv": "7.0.7",
     "@secretlint/secretlint-rule-no-homedir": "7.1.0",
     "@secretlint/secretlint-rule-preset-recommend": "8.0.0",
