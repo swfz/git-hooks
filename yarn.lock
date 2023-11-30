@@ -145,10 +145,10 @@
     "@textlint/regexp-string-matcher" "^2.0.2"
     escape-string-regexp "^4.0.0"
 
-"@secretlint/secretlint-rule-preset-recommend@7.0.7":
-  version "7.0.7"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-7.0.7.tgz#387040b3085d61697c10e456e936b2d90a7993a7"
-  integrity sha512-ORmyhOIxsSoRY/O4Wca4VknzTUVnoNZrwNxgMB3xoFMLg5r4MZVc+pskXq3BDr0g/oodLxD84+/Xj1DSvEGMKw==
+"@secretlint/secretlint-rule-preset-recommend@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-8.0.0.tgz#5350c2807687796210e971c629b0f6fe24bb6b49"
+  integrity sha512-V80PUPaUv+oDi00w+ZEE6YmxdNHoM0/CRWaAG/cC/wO7RIYMlHoZqsacMt3GEuzkOfAGnNENnOzDYsq08Z6u3Q==
 
 "@secretlint/source-creator@^8.0.0":
   version "8.0.0"
