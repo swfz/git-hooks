@@ -30,6 +30,6 @@
     "@secretlint/secretlint-rule-no-homedir": "8.1.0",
     "@secretlint/secretlint-rule-preset-recommend": "8.0.0",
     "lint-staged": "15.2.0",
-    "secretlint": "8.0.0"
+    "secretlint": "8.1.0"
   }
 }
