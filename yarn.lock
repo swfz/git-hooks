@@ -129,12 +129,12 @@
   dependencies:
     node-sarif-builder "^2.0.3"
 
-"@secretlint/secretlint-rule-no-dotenv@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-8.0.0.tgz#01865f88ea8d8335206114acdb64f3f6e897d0fe"
-  integrity sha512-9haK0fuElSz6eFQpZ5ZzwUOxtzGa4zpdeKLcdZKrpoxdLxnEzg3w0x/IvLXo6vdLwEk7CnvRurafH5BabQxFKg==
+"@secretlint/secretlint-rule-no-dotenv@8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-8.1.0.tgz#62fdde793f16f6b6f2b2f34de56db00de6411b47"
+  integrity sha512-0MZwDv+m/UGh074SzU8MSAZc7l9dK3t3JiXxeVTCPP3r6EvEt/kzXp8TqTJXx33uQonAICSfJPYORNFgIyogjA==
   dependencies:
-    "@secretlint/types" "^8.0.0"
+    "@secretlint/types" "^8.1.0"
 
 "@secretlint/secretlint-rule-no-homedir@8.1.0":
   version "8.1.0"
