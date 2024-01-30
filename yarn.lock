@@ -122,10 +122,10 @@
   resolved "https://registry.yarnpkg.com/@secretlint/profiler/-/profiler-8.1.0.tgz#239bcf97688020658ad023cd15ace3962636288b"
   integrity sha512-ZjEcpfptGvy8XikZL56OGOkXcTMvjKGj5a1YXq5+EIxrbKIBkmCqsN2rWuctkAG1nOtVh4l2uBOPxLhRG4CS4w==
 
-"@secretlint/secretlint-formatter-sarif@8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-formatter-sarif/-/secretlint-formatter-sarif-8.1.0.tgz#77990d5a580fc33d3af11e6d7f48e791d450f097"
-  integrity sha512-lkl+Od+H7pYXaTDm6misV1uQiVPFz4uNSl6JuZfxOcWKkMphfT6fUJex1Ddb73LTjraTkrymWiUDMSkpzXGULw==
+"@secretlint/secretlint-formatter-sarif@8.1.1":
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-formatter-sarif/-/secretlint-formatter-sarif-8.1.1.tgz#362e0aab77a2ee01d5883294b9770f902f63452d"
+  integrity sha512-8yEbBJZfRzC7WvBjbkgyfPAIIbnvF5ZW+L+sRnHQtcp9OmLkLEh3zE0VzjIQk6+RG6lws1oE5cVVo1hNdDWaWg==
   dependencies:
     node-sarif-builder "^2.0.3"
 
