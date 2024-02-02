@@ -129,12 +129,12 @@
   dependencies:
     node-sarif-builder "^2.0.3"
 
-"@secretlint/secretlint-rule-no-dotenv@8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-8.1.0.tgz#62fdde793f16f6b6f2b2f34de56db00de6411b47"
-  integrity sha512-0MZwDv+m/UGh074SzU8MSAZc7l9dK3t3JiXxeVTCPP3r6EvEt/kzXp8TqTJXx33uQonAICSfJPYORNFgIyogjA==
+"@secretlint/secretlint-rule-no-dotenv@8.1.1":
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-8.1.1.tgz#e6e5dfd1cfecd607b205b42c6ee5dc03d731086b"
+  integrity sha512-N7KZqOmcVEZpD2EuadxvE7P/nQ8YCcBwQqFUnPmUBJ2U/humJN1ejH7gyi++sqwQxkMOaNq8TAs7l1ub2JkETQ==
   dependencies:
-    "@secretlint/types" "^8.1.0"
+    "@secretlint/types" "^8.1.1"
 
 "@secretlint/secretlint-rule-no-homedir@8.1.1":
   version "8.1.1"
@@ -157,11 +157,6 @@
   dependencies:
     "@secretlint/types" "^8.1.1"
     istextorbinary "^6.0.0"
-
-"@secretlint/types@^8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-8.1.0.tgz#8380ffb94def1f4394de5933d8f901cedeaee138"
-  integrity sha512-fhIu9wCSN4gtKoRjg8iApXSI18yiKkiDjM/slXrPsV7BhIlkR0eOBLjiZB7m3K0vVROQheMhv50ECGz8bI8OBA==
 
 "@secretlint/types@^8.1.1":
   version "8.1.1"
