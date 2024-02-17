@@ -129,12 +129,12 @@
   dependencies:
     node-sarif-builder "^2.0.3"
 
-"@secretlint/secretlint-rule-no-dotenv@8.1.1":
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-8.1.1.tgz#e6e5dfd1cfecd607b205b42c6ee5dc03d731086b"
-  integrity sha512-N7KZqOmcVEZpD2EuadxvE7P/nQ8YCcBwQqFUnPmUBJ2U/humJN1ejH7gyi++sqwQxkMOaNq8TAs7l1ub2JkETQ==
+"@secretlint/secretlint-rule-no-dotenv@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-8.1.2.tgz#f62379e472ed43f31af409082d7fb58d6167cdd7"
+  integrity sha512-KWJ0xsqX4CHDdRaSOJt5xhsVtImDgv9p42wDLiKi65FgT93BwyKXKnrx3JOPCgPMYeQU83n8YISUYNVEwtorvA==
   dependencies:
-    "@secretlint/types" "^8.1.1"
+    "@secretlint/types" "^8.1.2"
 
 "@secretlint/secretlint-rule-no-homedir@8.1.1":
   version "8.1.1"
@@ -162,6 +162,11 @@
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-8.1.1.tgz#dfd9bd4f8df27343546e7fb712fd77c268867879"
   integrity sha512-0CRrqvW1/xDK6PatQSA0gq9TF1W+d3514PUc6Ccu5PQRRZZXBxJpJBFnPV+9uuzDDpNsm4LHs5Xi4HNs7PzhsA==
+
+"@secretlint/types@^8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-8.1.2.tgz#866915d532432181cd62ff3a311422a4d4de04b3"
+  integrity sha512-EBnWaioSVN/xEwPzInHNrpHzXDNwySFva548oVi0q4e8cjmKs/5j15bp6Hb4cWZaj4walKEdBblK/qra+NISMw==
 
 "@sindresorhus/merge-streams@^1.0.0":
   version "1.0.0"
