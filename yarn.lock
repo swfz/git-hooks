@@ -136,12 +136,12 @@
   dependencies:
     "@secretlint/types" "^8.1.1"
 
-"@secretlint/secretlint-rule-no-homedir@8.1.1":
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-homedir/-/secretlint-rule-no-homedir-8.1.1.tgz#b3d9b96b6cac6a8e498ab3bad79b0fd314669dee"
-  integrity sha512-aYC4Fc/KffGHGsnGxE9XLVlsagXamVqLtjPaY/1aaN9i6vlfOeyKoikjELd3Dhuk/7X9U807gX1122LCM/B5Yg==
+"@secretlint/secretlint-rule-no-homedir@8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-homedir/-/secretlint-rule-no-homedir-8.1.2.tgz#f4ab7345e5b2db4b3d00fa9ab71e4e191c802712"
+  integrity sha512-cdrui0ibDAgnFY3RnTvyWfmpiDAnrd2iEe5iWJZ1v/Tat70Wn7w1l/1vGXu3e611YRZTkh5FjaddjMIKnMVm3A==
   dependencies:
-    "@secretlint/types" "^8.1.1"
+    "@secretlint/types" "^8.1.2"
     "@textlint/regexp-string-matcher" "^2.0.2"
     escape-string-regexp "^4.0.0"
 
@@ -162,6 +162,11 @@
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-8.1.1.tgz#dfd9bd4f8df27343546e7fb712fd77c268867879"
   integrity sha512-0CRrqvW1/xDK6PatQSA0gq9TF1W+d3514PUc6Ccu5PQRRZZXBxJpJBFnPV+9uuzDDpNsm4LHs5Xi4HNs7PzhsA==
+
+"@secretlint/types@^8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-8.1.2.tgz#866915d532432181cd62ff3a311422a4d4de04b3"
+  integrity sha512-EBnWaioSVN/xEwPzInHNrpHzXDNwySFva548oVi0q4e8cjmKs/5j15bp6Hb4cWZaj4walKEdBblK/qra+NISMw==
 
 "@sindresorhus/merge-streams@^1.0.0":
   version "1.0.0"
