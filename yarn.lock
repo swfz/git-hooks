@@ -56,41 +56,41 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@secretlint/config-creator@^8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/config-creator/-/config-creator-8.1.2.tgz#9e2b9dd5a5f64e412b62d5ae1232bab6a8cff512"
-  integrity sha512-P9a3AqLJkfWS+xGxj1iZGeiPhpNiGxwttRR0hEXIRTO9CK8LZOziVEK6Q7t+X/Py7xO422vTnqoFcjmXPhSzaQ==
+"@secretlint/config-creator@^8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/config-creator/-/config-creator-8.2.4.tgz#e43d6e8cb99f47f811df2ea36ff704c1ef27853e"
+  integrity sha512-xPAN6IZDPZNcSRpay/gXBalVbb0qI2JvhRmznQZvz8SYiZPRA/gffjmqdy/mCQqOiiMDU5NVV4X5ohm+9ERDqA==
   dependencies:
-    "@secretlint/types" "^8.1.2"
+    "@secretlint/types" "^8.2.4"
 
-"@secretlint/config-loader@^8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/config-loader/-/config-loader-8.1.2.tgz#9b4544807bef25d16793da8fd7c266bee5eec00f"
-  integrity sha512-nR+EiagKi5mApA6t18EwvhMbCro8Qiu/rFQHXsSKSapfEe8f1BtjS4jDWVVM8NIhZUrKwHwR2MuNlHtUlCaksA==
+"@secretlint/config-loader@^8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/config-loader/-/config-loader-8.2.4.tgz#0cd3274e795a14c3e3e019129b8252f523f5f7f9"
+  integrity sha512-xEKp+gU8PB+sfUvLTB/rx/ZpRMdWdROIlXrvvib7NmFejxhgzXEVeK6tRQafW2IAXN0XUSU9RmaGs/+gqUiDGA==
   dependencies:
-    "@secretlint/profiler" "^8.1.2"
-    "@secretlint/types" "^8.1.2"
+    "@secretlint/profiler" "^8.2.4"
+    "@secretlint/types" "^8.2.4"
     ajv "^8.12.0"
     debug "^4.3.4"
     rc-config-loader "^4.1.3"
     try-resolve "^1.0.1"
 
-"@secretlint/core@^8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/core/-/core-8.1.2.tgz#214bada950e4f4ff8b598dea384f0df1d43ba38a"
-  integrity sha512-uK1R/Q7d4E0xMVrpuN3bSXF1LVF8XbjH8ou31UKbm/5fPGjZQf1uhwUuU9kc+4oLYATUEk2x0WYyW/8r5Uz4Iw==
+"@secretlint/core@^8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/core/-/core-8.2.4.tgz#b985da05e70c73d5a11ef1e07c395d6b5d5d86cf"
+  integrity sha512-Ws/jX/It7O5kRlvYXM6tHgvLmbSTvQTG7G+vQ0FWb1KjS14+5CbuRdxcQQLkD8shD/87tHu53lOmIlvn/Rc/YA==
   dependencies:
-    "@secretlint/profiler" "^8.1.2"
-    "@secretlint/types" "^8.1.2"
+    "@secretlint/profiler" "^8.2.4"
+    "@secretlint/types" "^8.2.4"
     debug "^4.3.4"
     structured-source "^4.0.0"
 
-"@secretlint/formatter@^8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/formatter/-/formatter-8.1.2.tgz#6fb27d245deb73cd0bf541969c46554385a1b2dc"
-  integrity sha512-xh3Br2p/wLKMhtZU/9nxVXEwfVP5o2eH+qkMJT5Nq7vRDwjrrRPqLR9e/8TtDkh3SWbX2n3W3V8C18RnKQU6kw==
+"@secretlint/formatter@^8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/formatter/-/formatter-8.2.4.tgz#ad4c2276d541449b0ce1ab238f154f5f59d4c004"
+  integrity sha512-W7xmL1KNXL5azyy2Ez2a+mYWeQZ/kypc7B2w4X/otdCvaLWYXP7pRS4up64vBrwu4X1kpKy2pFkPEs4FUKUcqA==
   dependencies:
-    "@secretlint/types" "^8.1.2"
+    "@secretlint/types" "^8.2.4"
     "@textlint/linter-formatter" "^12.6.1"
     "@textlint/module-interop" "^13.4.1"
     "@textlint/types" "^12.6.1"
@@ -99,69 +99,69 @@
     is-file "^1.0.0"
     pluralize "^8.0.0"
     strip-ansi "^6.0.1"
-    table "^6.8.1"
+    table "^6.8.2"
     terminal-link "^2.1.1"
     try-resolve "^1.0.1"
 
-"@secretlint/node@^8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/node/-/node-8.1.2.tgz#f039303596c8234dd40d6529aa10a9dc0cabce82"
-  integrity sha512-UlwrPgkrNt6G1ioBbd2ZKk8SL0Xq0ORcFeIrcFbsBmusAMdPQGuTUkUXjt2zetAuDz68tWdq9Lhlrv/5tKVVlw==
+"@secretlint/node@^8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/node/-/node-8.2.4.tgz#59a35406bf42d145f95611a982f72aa5e7214b74"
+  integrity sha512-+0JTd6aMJEMdlvEpK6uRHHjaLDG5tbgwxaCB2kfPSARHpUTrmOhZRK+UtX0yik3csuT2Nw8pUA/rIpEKNE/l/Q==
   dependencies:
-    "@secretlint/config-loader" "^8.1.2"
-    "@secretlint/core" "^8.1.2"
-    "@secretlint/formatter" "^8.1.2"
-    "@secretlint/profiler" "^8.1.2"
-    "@secretlint/source-creator" "^8.1.2"
-    "@secretlint/types" "^8.1.2"
+    "@secretlint/config-loader" "^8.2.4"
+    "@secretlint/core" "^8.2.4"
+    "@secretlint/formatter" "^8.2.4"
+    "@secretlint/profiler" "^8.2.4"
+    "@secretlint/source-creator" "^8.2.4"
+    "@secretlint/types" "^8.2.4"
     debug "^4.3.4"
     p-map "^4.0.0"
 
-"@secretlint/profiler@^8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/profiler/-/profiler-8.1.2.tgz#2f555730f5a8e6f864d528d7f1a128961d07db8e"
-  integrity sha512-KsnFxJuT3hjc9GTmuEHGnuU4khamLYBuXd6dWaSzsOhADq6xMA5KE5qaFB4dRc7Yt8OtJMukWVht0bM4Kt5Hkg==
+"@secretlint/profiler@^8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/profiler/-/profiler-8.2.4.tgz#86468604696982595e4a233c035b0fbd9aaba457"
+  integrity sha512-KfRGWf7R4tAxJwk7Ojoa8n53yLh3zmM1hmG1Nh/xWkSXsatTF5qi7bfyi3+QjAxhBZRaz6aR9JbX8PS3JGon1w==
 
-"@secretlint/secretlint-formatter-sarif@8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-formatter-sarif/-/secretlint-formatter-sarif-8.1.2.tgz#97eb7136e0ac1e6c430bc3a0dee945a96603c4fe"
-  integrity sha512-MqWXInaag953OLgInuZ1LVdvK/MCt2Xv0A0/LbKewj4Ge1EXNZTunn+t2AdnMz6eyn74vnUK4Uphg/zKB8a4wA==
+"@secretlint/secretlint-formatter-sarif@8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-formatter-sarif/-/secretlint-formatter-sarif-8.2.4.tgz#891e0f9caab481eaa4efd263565abea4c977cc9f"
+  integrity sha512-6WzeLuGS8O5Vc80Ss1UB76jTygqbH/BDFxqdDXO/uz4pSc3CbGhlVFPrSc6JUiEV6z5c1hXIGUyn6Gq7VxjDXw==
   dependencies:
     node-sarif-builder "^2.0.3"
 
-"@secretlint/secretlint-rule-no-dotenv@8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-8.1.2.tgz#f62379e472ed43f31af409082d7fb58d6167cdd7"
-  integrity sha512-KWJ0xsqX4CHDdRaSOJt5xhsVtImDgv9p42wDLiKi65FgT93BwyKXKnrx3JOPCgPMYeQU83n8YISUYNVEwtorvA==
+"@secretlint/secretlint-rule-no-dotenv@8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-dotenv/-/secretlint-rule-no-dotenv-8.2.4.tgz#5fa9a698919a0151e40cbad8ae8551a9fc310ddd"
+  integrity sha512-9aZF5Q7RJbmlu4JZqyVq2Qw6bDRMG+BELztrLDc/oXfiBWs6uhyqefkBxEjWk8UGTz68kcVgH2RBKhgUfKmvFg==
   dependencies:
-    "@secretlint/types" "^8.1.2"
+    "@secretlint/types" "^8.2.4"
 
-"@secretlint/secretlint-rule-no-homedir@8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-homedir/-/secretlint-rule-no-homedir-8.1.2.tgz#f4ab7345e5b2db4b3d00fa9ab71e4e191c802712"
-  integrity sha512-cdrui0ibDAgnFY3RnTvyWfmpiDAnrd2iEe5iWJZ1v/Tat70Wn7w1l/1vGXu3e611YRZTkh5FjaddjMIKnMVm3A==
+"@secretlint/secretlint-rule-no-homedir@8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-no-homedir/-/secretlint-rule-no-homedir-8.2.4.tgz#5e0b24edeeaca40620a37a39b2cbceaa681a6bf4"
+  integrity sha512-ZSQF3J/LWu7fOw7jYQCBZnWCJsfL441Y0N70r+/mD8rTaKwZ9KHJRikqwVZg0xcu5b2rLS+nlONMe7AKwMmEAw==
   dependencies:
-    "@secretlint/types" "^8.1.2"
+    "@secretlint/types" "^8.2.4"
     "@textlint/regexp-string-matcher" "^2.0.2"
     escape-string-regexp "^4.0.0"
 
-"@secretlint/secretlint-rule-preset-recommend@8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-8.1.2.tgz#2bc69c707b59b2f2ed8bc6c280b72c2e7afbee68"
-  integrity sha512-JSbpTNhcyB/Ox/CXptK2ihjqoWZvcpJu2Ev3XYgO3/yRwx3O64jWGqHn2axGh6fcaIfUGgwoUVQa5GanlqKAWg==
+"@secretlint/secretlint-rule-preset-recommend@8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-8.2.4.tgz#1190fc16ace25d03c30c66ee580180ea7c4ffd59"
+  integrity sha512-Ifaz0ngkgP911TfJkkIXrP9dCpxQGCDAISZ/sG0mdOOg9KO8jF9pnGKzCOuVX4q97v6MDtELXjYAxnPa8xV4Ow==
 
-"@secretlint/source-creator@^8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/source-creator/-/source-creator-8.1.2.tgz#53675225dc76b96f852c5fa31a598ac2f9e6f6ac"
-  integrity sha512-7I7LZyTWHTWB2toGpaNy/gOwguhVdG/fuw/JmeoF7YwBOFd80S1vQ/UpS8DWLkXlALkyIQ56ovkiKgF7739PsA==
+"@secretlint/source-creator@^8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/source-creator/-/source-creator-8.2.4.tgz#159282cc2393966b084e1cda35d066e88fed5635"
+  integrity sha512-qWyXy3SWlHh1Uh8ja+m/Pw869JoMUfr/evhkmvyIXFj6TWNCzCwlNZ6zRhlt1JZ5EEOFzgHP+RbXx5TpuSlEhA==
   dependencies:
-    "@secretlint/types" "^8.1.2"
+    "@secretlint/types" "^8.2.4"
     istextorbinary "^6.0.0"
 
-"@secretlint/types@^8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-8.1.2.tgz#866915d532432181cd62ff3a311422a4d4de04b3"
-  integrity sha512-EBnWaioSVN/xEwPzInHNrpHzXDNwySFva548oVi0q4e8cjmKs/5j15bp6Hb4cWZaj4walKEdBblK/qra+NISMw==
+"@secretlint/types@^8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-8.2.4.tgz#0b538d5d92746ba45374899087bb3e5e4c519321"
+  integrity sha512-Pf+ArQmx4+K75TpMRhUgqw2FL8DGNf0OkT9g6L1t4HoYESiVlfZw3quNTvO+GTWzRxssUjnWoQ4+sEg3MNgEHA==
 
 "@sindresorhus/merge-streams@^2.1.0":
   version "2.3.0"
@@ -1027,15 +1027,15 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-secretlint@8.1.2:
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/secretlint/-/secretlint-8.1.2.tgz#3a3fcec5951fef97d8ab0c6aea20ed8b19312a54"
-  integrity sha512-YJf1WoIu+bevQdAwc1YnK9KdytOJ+5g9lRa90nmTyC2WlhIBK7s6CEVw46kUzxn4y+UVEF9POn7vDsyThqrQQQ==
+secretlint@8.2.4:
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/secretlint/-/secretlint-8.2.4.tgz#3dc728c3713dda7f2339a31b321124a4755d287c"
+  integrity sha512-XkNuzlIX2RWhZwGZ6HEV/JsMv/jI0Po20Gs9HPPkXRaVuSrmLTO+iqg/8PyAKPWFMlVNXZ2DHkLTKCxVwCLI5A==
   dependencies:
-    "@secretlint/config-creator" "^8.1.2"
-    "@secretlint/formatter" "^8.1.2"
-    "@secretlint/node" "^8.1.2"
-    "@secretlint/profiler" "^8.1.2"
+    "@secretlint/config-creator" "^8.2.4"
+    "@secretlint/formatter" "^8.2.4"
+    "@secretlint/node" "^8.2.4"
+    "@secretlint/profiler" "^8.2.4"
     debug "^4.3.4"
     globby "^14.0.1"
     meow "^12.1.1"
@@ -1206,6 +1206,17 @@ table@^6.8.1:
   version "6.8.1"
   resolved "https://registry.yarnpkg.com/table/-/table-6.8.1.tgz#ea2b71359fe03b017a5fbc296204471158080bdf"
   integrity sha512-Y4X9zqrCftUhMeH2EptSSERdVKt/nEdijTOacGD/97EKjhQ/Qs8RTlEGABSJNNN8lac9kheH+af7yAkEWlgneA==
+  dependencies:
+    ajv "^8.0.1"
+    lodash.truncate "^4.4.2"
+    slice-ansi "^4.0.0"
+    string-width "^4.2.3"
+    strip-ansi "^6.0.1"
+
+table@^6.8.2:
+  version "6.8.2"
+  resolved "https://registry.yarnpkg.com/table/-/table-6.8.2.tgz#c5504ccf201213fa227248bdc8c5569716ac6c58"
+  integrity sha512-w2sfv80nrAh2VCbqR5AK27wswXhqcck2AhfnNW76beQXskGZ1V12GwS//yYVa3d3fcvAip2OUnbDAjW2k3v9fA==
   dependencies:
     ajv "^8.0.1"
     lodash.truncate "^4.4.2"
