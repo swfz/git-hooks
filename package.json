@@ -29,7 +29,7 @@
     "@secretlint/secretlint-rule-no-dotenv": "9.0.0",
     "@secretlint/secretlint-rule-no-homedir": "9.0.0",
     "@secretlint/secretlint-rule-preset-recommend": "9.0.0",
-    "lint-staged": "15.2.10",
+    "lint-staged": "15.2.11",
     "secretlint": "9.0.0"
   }
 }
