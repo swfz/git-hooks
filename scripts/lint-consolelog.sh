@@ -1,9 +1,9 @@
 #!/bin/bash
 
-grep -nH console.log $@ \
+awk '/console.log/ { match($0, /console.log/); print FILENAME ":" FNR ":" RSTART ":" $0 }' $@ \
   | reviewdog \
-  -fail-on-error \
-  -efm="%f:%l: %m" \
+  -fail-level=any \
+  -efm="%f:%l:%c:%m" \
   -diff='git diff --cached' \
   -reporter local
 

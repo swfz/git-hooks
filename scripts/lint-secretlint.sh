@@ -8,7 +8,7 @@ ${top_dirname}/node_modules/.bin/secretlint \
   --format checkstyle \
   --secretlintrc ${top_dirname}/.secretlintrc.json $@ \
   | reviewdog \
-  -fail-on-error \
+  -fail-level=any \
   -f checkstyle \
   -diff "git diff --cached" \
   -reporter local
