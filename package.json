@@ -25,11 +25,11 @@
     "prepare": "node scripts/bootstrap.js"
   },
   "dependencies": {
-    "@secretlint/secretlint-formatter-sarif": "11.2.5",
-    "@secretlint/secretlint-rule-no-dotenv": "11.2.5",
-    "@secretlint/secretlint-rule-no-homedir": "11.2.5",
-    "@secretlint/secretlint-rule-preset-recommend": "11.2.5",
+    "@secretlint/secretlint-formatter-sarif": "11.3.0",
+    "@secretlint/secretlint-rule-no-dotenv": "11.3.0",
+    "@secretlint/secretlint-rule-no-homedir": "11.3.0",
+    "@secretlint/secretlint-rule-preset-recommend": "11.3.0",
     "lint-staged": "16.2.6",
-    "secretlint": "11.2.5"
+    "secretlint": "11.3.0"
   }
 }
