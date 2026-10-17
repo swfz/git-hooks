@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# グローバルでは何もしない。リポジトリ側の .git/hooks/post-merge があれば呼ぶ
+source $(dirname "${0}")/_local-hook-exec
