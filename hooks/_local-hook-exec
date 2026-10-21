@@ -22,12 +22,42 @@ run_local_hook() {
   export LOCAL_HOOK_IS_CALLED=1
 }
 
+has_lefthook_config() {
+  local name ext
+  for name in lefthook .lefthook .config/lefthook; do
+    for ext in yml yaml json jsonc toml; do
+      if [ -e "${GIT_ROOT}/${name}.${ext}" ]; then
+        return 0
+      fi
+    done
+  done
+  return 1
+}
+
+find_lefthook_bin() {
+  if [ -x "${GIT_ROOT}/node_modules/.bin/lefthook" ]; then
+    echo "${GIT_ROOT}/node_modules/.bin/lefthook"
+    return 0
+  fi
+  command -v lefthook
+}
+
 # Prefer project's hook than global hooks
 if [ -e "$LOCAL_HOOK" ]; then
   run_local_hook "$LOCAL_HOOK" "$@"
 fi
 if [ -e "$LOCAL_HOOK_HUSKY" ]; then
   run_local_hook "$LOCAL_HOOK_HUSKY" "$@"
+fi
+# lefthook install 済みで .git/hooks 側から既に呼ばれている場合は二重実行しない
+if has_lefthook_config && ! { [ -e "$LOCAL_HOOK" ] && grep -q lefthook "$LOCAL_HOOK"; }; then
+  if lefthook_bin=$(find_lefthook_bin); then
+    # core.hooksPath 設定下で自動同期されるとグローバルフック側に書き込まれる可能性があるため無効化する
+    run_local_hook "$lefthook_bin" run --no-auto-install "$HOOK_NAME" "$@"
+  else
+    echo '[ERROR] lefthook config found but lefthook command is not installed' >&2
+    run_local_hook false
+  fi
 fi
 
 if cat "${IGNORE_GLOBAL_HOOKS}" | grep -q "${GIT_ROOT}"; then
