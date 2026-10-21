@@ -9,6 +9,13 @@ global git hooks
 
 - actionlint
 - reviewdog
+- bats (テスト実行用)
+
+## テスト
+
+```sh
+npm test
+```
 
 ## 下記を参考にしている
 

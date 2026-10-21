@@ -10,16 +10,24 @@ declare LOCAL_HOOK_HUSKY="${GIT_ROOT}/${husky_dir}/${HOOK_NAME}"
 declare scriptDir=$(cd $(dirname $0);pwd)
 declare IGNORE_GLOBAL_HOOKS="$(dirname "${scriptDir}")/IGNORE_GLOBAL_HOOKS"
 
+export LOCAL_HOOK_FAILED=0
+
+# 複数のローカルフックを実行した場合でも、後続の成功で先の失敗を上書きしない
+run_local_hook() {
+  local rc=0
+  "$@" || rc=$?
+  if [ "${LOCAL_HOOK_FAILED}" = 0 ]; then
+    export LOCAL_HOOK_FAILED=${rc}
+  fi
+  export LOCAL_HOOK_IS_CALLED=1
+}
+
 # Prefer project's hook than global hooks
 if [ -e "$LOCAL_HOOK" ]; then
-  $LOCAL_HOOK
-  export LOCAL_HOOK_FAILED=$?
-  export LOCAL_HOOK_IS_CALLED=1
+  run_local_hook "$LOCAL_HOOK" "$@"
 fi
 if [ -e "$LOCAL_HOOK_HUSKY" ]; then
-  $LOCAL_HOOK_HUSKY
-  export LOCAL_HOOK_FAILED=$?
-  export LOCAL_HOOK_IS_CALLED=1
+  run_local_hook "$LOCAL_HOOK_HUSKY" "$@"
 fi
 
 if cat "${IGNORE_GLOBAL_HOOKS}" | grep -q "${GIT_ROOT}"; then
