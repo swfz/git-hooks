@@ -26,6 +26,7 @@ global git hooks
 このグローバルフックが `lefthook run` を呼ぶため、`lefthook install` は不要。
 
 - `lefthook install` は実行しない
+  - lefthook の npm パッケージは postinstall で `lefthook install` を実行するため、npm / yarn で lefthook を入れると install 時にも自動で実行される（pnpm v10 以降はデフォルトで postinstall をブロックする）
   - lefthook v2.1.0 未満は `core.hooksPath`（このリポジトリの `hooks/`）にフックを書き込み、グローバルフックを壊す
   - v2.1.0 以降はエラーで止まるが、案内される `--force` は `hooks/` に書き込み、`--reset-hooks-path` はグローバルの `core.hooksPath` を unset するため、どちらも使わない
 - 壊れた場合はこのリポジトリで `git status` で確認し、`git checkout hooks/` で戻す
