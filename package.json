@@ -22,7 +22,8 @@
     "access": "public"
   },
   "scripts": {
-    "prepare": "node scripts/bootstrap.js"
+    "prepare": "node scripts/bootstrap.js",
+    "test": "bats tests"
   },
   "dependencies": {
     "@secretlint/secretlint-formatter-sarif": "11.7.1",
